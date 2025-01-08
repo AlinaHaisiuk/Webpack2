@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     index: "./src/index.js",
     print: "./src/print.js",
+    typescript: "./src/index.ts",
   },
   mode: "development",
   plugins: [
@@ -81,7 +82,7 @@ module.exports = {
         test: /\.ts$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: "ts-loader", // Використовуємо ts-loader для компіляції TypeScript в JavaScript
         },
       },
     ],

@@ -4,6 +4,8 @@ import Icon from "./photo.png";
 import Data from "./data.xml";
 import Notes from "./data.csv";
 import printMe from "./print.js";
+import "./style.less"; // Для LESS
+// import "./style.scss"; // Для Sass/SCSS
 
 function component() {
   const element = document.createElement("div");
